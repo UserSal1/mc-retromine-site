@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --hacker: #000000;
+}
+
+.descript {
+    color: #000;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.welcome-header {
+    font-size: 50px;
+    color: var(--hacker);
+}
+
+.pixel-container {
+    background-color: #fff;
+    border: 5px solid var(--hacker);
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #fff;
+    border: 1px solid var(--hacker);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.navlist {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    color: floralwhite;
+}
+
+.item a {
+    font-size: 20px;
+    transition: 0.3s all ease;
+}
+
+.item a:hover {
+    color: cornflowerblue;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    transition: 0.3s all ease;
+}
+
+.logo img:hover {
+    transform: scale(2.1) rotate(360deg);
+}
+
+input {
+    background-color: #fff;
+    border: 1px solid var(--hacker);
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--hacker);
+}
+
+label {
+    color: var(--hacker);
+}
+
+@media screen and (max-width: 768px) {
+    /* Optimization */
+}

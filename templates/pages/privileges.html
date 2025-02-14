@@ -1,0 +1,27 @@
+{% extends "basefile.html" %}
+{% block body %}
+	<div class="pixel-container">
+        <h1 class="welcome-header">Privileges</h1>
+    </div>
+
+    <div class="pixel-container">
+        {% for i in privileges %}
+
+            <div class="pixel-container">
+                {% if i.color == None %}
+                    <h1 class="welcome-header">{{ i.name }}</h1>
+                {% else %}
+                <h1 class="welcome-header" style="color: {{ i.color }}">{{ i.name }}</h1>
+                {% endif %}
+                <h2 class="descript">{{ i.description }}</h2>
+                <h3 class="descript">
+                    permissions:
+                    {{ i.permissions }}</h3>
+                <br> <br>
+                <button class="btn"><a href="/", style="color: black">Buy privilege</a></button>
+            </div>
+        {% else %}
+            <h1 class="welcome-header">No privileges</h1>
+        {% endfor %}
+    </div>
+{% endblock %}
